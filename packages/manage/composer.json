@@ -16,7 +16,6 @@
     "prefer-stable": true,
     "require": {
         "laravel/passport": "^10.4",
-        "laravel/sanctum": "^3.0",
         "laravel/socialite": "^5.2.5",
         "laravel/ui": "^3.3"
     },

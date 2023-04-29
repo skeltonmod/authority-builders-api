@@ -1,0 +1,64 @@
+{
+    "name": "deyji/manage",
+    "description": "Your Package Description here",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "package"
+    ],
+    "authors": [
+        {
+            "name": "elijah",
+            "email": "abgaoe@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "laravel/passport": "^10.4",
+        "laravel/sanctum": "^3.0",
+        "laravel/socialite": "^5.2.5",
+        "laravel/ui": "^3.3"
+    },
+    "require-dev": {
+        "symfony/thanks": "^1.0",
+        "phpunit/phpunit": "^8.5.20@dev",
+        "mockery/mockery": "^1.4.2.0@dev",
+        "orchestra/testbench": "^v6.21.0.8@dev",
+        "orchestra/database": "^v6.0.0@dev",
+        "illuminate/support": "^v8.52.0@dev",
+        "fzaninotto/faker": "^1.9@dev"
+    },
+    "autoload": {
+        "classmap": [
+            "src/database/seeders"
+        ],
+        "psr-4": {
+            "Deyji\\Manage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Deyji\\Manage\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Deyji\\Manage\\ManageServiceProvider",
+                "Deyji\\Manage\\Providers\\AuthServiceProvider"
+            ],
+            "aliases": {
+                "Deyji": "Deyji\\Manage\\ManageFacade"
+            }
+        }
+    }
+}

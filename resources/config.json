@@ -1,0 +1,13 @@
+{
+    "idleCheck": false,
+    "maintentanceCheck": false,
+    "appcolor": "#FF0000",
+    "idleMinutes": {
+        "label": "Max Idle Time",
+        "val": 10,
+        "color": "blue"
+    },
+    "mapProvider": null,
+    "osmKeys": null,
+    "googleMapKeys": null
+}

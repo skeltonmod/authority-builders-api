@@ -1,0 +1,1 @@
+migrate: php artisan migrate --force

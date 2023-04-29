@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use Carbon\Carbon;
 use GuzzleHttp\Client;
-use Rinvex\Country\CountryLoader;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 

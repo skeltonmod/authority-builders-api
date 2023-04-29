@@ -1,1 +1,1 @@
-migrate: php artisan migrate --force
+setup: php artisan migrate:fresh --force --seed && php artisan passport:install
